@@ -16,7 +16,7 @@ namespace API.Controllers
             _context = context;
         }
 
-        [HttpGet]
+        [HttpGet]   
         public ActionResult<List<Product>> GetProducts()
         {
             var products = _context.Products.ToList();
